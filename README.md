@@ -20,8 +20,8 @@ go test ./dayXX
 
 ## When will I get bored?
 
-- [ ] Day1
-- [ ] Day2
+- [x] Day1
+- [x] Day2
 - [ ] Day3
 - [ ] Day4
 - [ ] Day5

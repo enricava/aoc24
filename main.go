@@ -8,7 +8,7 @@ import (
 	"time"
 
 	// Change to current day
-	day "github.com/enricava/aoc24/day02"
+	day "github.com/enricava/aoc24/day03"
 )
 
 func main() {
@@ -34,7 +34,7 @@ func aoc(part, digits string) {
 	}
 	defer file.Close()
 
-	var runner func(file io.Reader) any
+	var runner func(file io.Reader) int
 	switch part {
 	case "a":
 		runner = day.PartA

@@ -71,7 +71,7 @@ func PartA(file io.Reader) int {
 	m := make([][]byte, 0)
 	for scanner.Scan() {
 		line := scanner.Bytes()
-		m = append(m, line)
+		m = append(m, append([]byte{}, line...))
 	}
 
   PrintMap(m)

@@ -27,11 +27,15 @@ var Directions = [...][2]int{
 	{-1, -1},
 }
 
+func InBounds(m [][]byte, ki, kj int) bool {
+	return ki >= 0 && ki < len(m) && kj >= 0 && kj < len(m[0])
+}
+
 func isXmas(m [][]byte, i, j, letter_idx int, dir [2]int) bool {
 	ki := i + dir[0]*letter_idx
 	kj := j + dir[1]*letter_idx
 
-	if ki < 0 || ki >= len(m) || kj < 0 || kj >= len(m[0]) {
+	if !InBounds(m, ki, kj) {
 		return false
 	}
 
@@ -74,7 +78,7 @@ func PartA(file io.Reader) int {
 		m = append(m, append([]byte{}, line...))
 	}
 
-  PrintMap(m)
+	PrintMap(m)
 	acc := PartASol(m)
 
 	return acc

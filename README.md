@@ -20,10 +20,13 @@ go test ./dayXX
 
 ## When will I get bored?
 
+And some notes of what I learned
+
 - [x] Day1
-- [x] Day2
+- [x] Day2 - `append` modifies the original slice
 - [x] Day3
-- [ ] Day4
+- [x] Day4 - make sure to copy slices as there are hacky ways in which my
+slices can be modified due to reallocations
 - [ ] Day5
 - [ ] Day6
 - [ ] Day7

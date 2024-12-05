@@ -27,7 +27,7 @@ And some notes of what I learned
 - [x] Day3
 - [x] Day4 - make sure to copy slices as there are hacky ways in which my
 slices can be modified due to reallocations
-- [ ] Day5
+- [x] Day5
 - [ ] Day6
 - [ ] Day7
 - [ ] Day8

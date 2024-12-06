@@ -28,7 +28,8 @@ And some notes of what I learned
 - [x] Day4 - make sure to copy slices as there are hacky ways in which my
 slices can be modified due to reallocations
 - [x] Day5
-- [ ] Day6
+- [x] Day6 - oh so we cannot place obstacles in positions that the guard has
+  already checked but is facing away from?
 - [ ] Day7
 - [ ] Day8
 - [ ] Day9

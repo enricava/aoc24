@@ -8,7 +8,7 @@ import (
 	"time"
 
 	// Change to current day
-	day "github.com/enricava/aoc24/day06"
+	day "github.com/enricava/aoc24/day07"
 )
 
 func main() {

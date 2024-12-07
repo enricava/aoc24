@@ -2,7 +2,6 @@ package day06
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 )
 
@@ -134,85 +133,4 @@ func PartB(file io.Reader) int {
 
 	acc := PartBSol(m, ki, kj)
 	return acc
-}
-
-// please God forgive me for this function
-// i am tired
-func printMap(m [][]int) {
-	slice := []int{}
-
-	for _, r := range m {
-		for _, v := range r {
-			if !contains(slice, v) {
-				slice = append(slice, v)
-			}
-			// up, right, down, left
-			vv := [4]bool{v&2 != 0, v&4 != 0, v&8 != 0, v&16 != 0}
-
-			if v == 0 {
-				fmt.Print("# ")
-			} else if v < 0 {
-				fmt.Print("🪨")
-			} else if vv[0] && vv[1] && vv[2] && vv[3] {
-				fmt.Print("󰁁 ")
-			} else if vv[0] && vv[1] && vv[2] {
-				// up, right, down
-				fmt.Print("+ ")
-			} else if vv[0] && vv[1] && vv[3] {
-				// up, right, left
-				fmt.Print("+ ")
-			} else if vv[0] && vv[2] && vv[3] {
-				// up, down, left
-				fmt.Print("+ ")
-			} else if vv[1] && vv[2] && vv[3] {
-				// right, down, left
-				fmt.Print("+ ")
-			} else if vv[0] && vv[1] {
-				// up, right
-				fmt.Print("󰁜 ")
-			} else if vv[0] && vv[2] {
-				// up, down
-				fmt.Print("󰹹 ")
-			} else if vv[0] && vv[3] {
-				// up, left
-				fmt.Print("󰁛 ")
-			} else if vv[1] && vv[2] {
-				// right, down
-				fmt.Print("󰁃 ")
-			} else if vv[1] && vv[3] {
-				// right, left
-				fmt.Print(" ")
-			} else if vv[2] && vv[3] {
-				// down, left
-				fmt.Print("󰁂 ")
-			} else if vv[0] {
-				// up
-				fmt.Print(" ")
-			} else if vv[1] {
-				// right
-				fmt.Print(" ")
-			} else if vv[2] {
-				// down
-				fmt.Print(" ")
-			} else if vv[3] {
-				// left
-				fmt.Print(" ")
-			} else {
-				// none
-				fmt.Print(". ")
-			}
-		}
-		fmt.Println()
-	}
-	// fmt.Println("slice:", slice)
-	fmt.Println("______________________________")
-}
-
-func contains(slice []int, v int) bool {
-	for _, x := range slice {
-		if x == v {
-			return true
-		}
-	}
-	return false
 }

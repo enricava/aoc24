@@ -31,7 +31,7 @@ slices can be modified due to reallocations
 - [x] Day6 - oh so we cannot place obstacles in positions that the guard has
   already checked but is facing away from?
 - [x] Day7
-- [ ] Day8
+- [x] Day8
 - [ ] Day9
 - [ ] Day10
 - [ ] Day11

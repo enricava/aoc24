@@ -32,7 +32,7 @@ slices can be modified due to reallocations
   already checked but is facing away from?
 - [x] Day7
 - [x] Day8
-- [ ] Day9
+- [x] Day9
 - [x] Day10
 - [ ] Day11
 - [ ] Day12

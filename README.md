@@ -37,7 +37,7 @@ slices can be modified due to reallocations
 - [x] Day11
 - [x] Day12
 - [x] Day13
-- [ ] Day14
+- [x] Day14
 - [ ] Day15
 - [ ] Day16
 - [ ] Day17

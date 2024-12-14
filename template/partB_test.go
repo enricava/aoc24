@@ -1,18 +1,30 @@
 package template
 
 import (
+	"os"
 	"strings"
 	"testing"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func TestB(t *testing.T) {
+	log.SetOutput(os.Stdout)
+	log.SetLevel(log.DebugLevel)
+
 	input := strings.NewReader(
 		`myrawstring`,
 	)
-	expected := 1
+
 	result := PartB(input)
-  println(expected, result)
-	if (expected != result) {
-	  t.Fail()
+	expected := 1
+
+	if expected != result {
+		log.WithFields(log.Fields{
+			"expected": expected,
+			"result":   result,
+		}).Warn("Failed")
+
+		t.Fail()
 	}
 }

@@ -9,7 +9,11 @@ Make sure to modify the package name, and in `main.go` replace the previous
 day's import.
 
 ```fish
-go run main.go a 01
+# Include debug logs
+go run debug main.go a 01
+
+# Release mode
+go run r main.go a 01
 ```
 
 ## Testing

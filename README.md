@@ -2,6 +2,12 @@
 
 Practising my acquired knowledge of `go`.
 
+*⚠️ NOTE ⚠️* Most of these solutions are uploaded without any sort of cleanup, so
+lower expectations on code readibility and abstraction.
+
+The goal is to solve each day's problems while learning a bit of `go`, not to
+come up with the optimal, cleanest solutions.
+
 ## Running
 
 For each day, copy the `template/` directory and create a `dayXX/` directory.
@@ -52,10 +58,3 @@ slices can be modified due to reallocations
 - [ ] Day22
 - [ ] Day23
 - [ ] Day24
-- [ ] Day25
-- [ ] Day26
-- [ ] Day27
-- [ ] Day28
-- [ ] Day29
-- [ ] Day30
-- [ ] Day31

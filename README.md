@@ -54,7 +54,7 @@ slices can be modified due to reallocations
   - [x] A
   - [ ] B - I am a bit lazy to do this one
 - [x] Day18
-- [ ] Day19
+- [x] Day19
 - [ ] Day20
 - [ ] Day21
 - [ ] Day22

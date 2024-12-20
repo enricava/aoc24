@@ -8,7 +8,7 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	// Change to current day
-	day "github.com/enricava/aoc24/day19"
+	day "github.com/enricava/aoc24/day20"
 )
 
 func main() {
